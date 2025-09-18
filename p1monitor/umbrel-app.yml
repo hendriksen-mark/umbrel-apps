@@ -1,0 +1,41 @@
+manifestVersion: 1.1
+id: p1monitor
+category: automation
+name: P1 Monitor
+version: "2.0.0"
+tagline: Smart meter monitoring and visualization
+
+# Description
+
+description: >-
+  P1 Monitor is a tool to monitor and visualize data from your smart energy meter (DSMR/P1),
+  including live usage, history, solar panel integration, and more. This Dockerized version
+  makes it easy to run on any system, not just Raspberry Pi.
+
+  - Live and historical energy usage graphs
+  - SolarEdge and other solar panel support
+  - Web-based dashboard
+  - Data export and accounting features
+  - Runs fully local, no cloud required
+
+developer: intelwolf
+website: https://marcel.duketown.com/p1-monitor-docker-versie/
+dependencies: []
+repo: https://github.com/intelwolf/p1monitor
+support: https://forum.p1mon.nl
+port: 9080
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+releaseNotes: >-
+  This release brings the latest features and fixes from the P1 Monitor Docker project.
+  For more details, see the GitHub repository and project website.
+submitter: Mark Hendriksen
+submission: https://github.com/intelwolf/p1monitor

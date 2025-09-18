@@ -1,0 +1,17 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: p1monitor_server_1
+      APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: mclaassen/p1mon:latest
+    restart: on-failure
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data:/p1mon/data
+      - ${APP_DATA_DIR}/usbdisk:/p1mon/mnt/usb
+      - ${APP_DATA_DIR}/ramdisk:/p1mon/mnt/ramdisk
