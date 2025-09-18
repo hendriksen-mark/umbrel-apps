@@ -33,12 +33,20 @@ description: >-
   resource-friendly, and designed to run 24/7 on small devices.
 developer: diyHue
 website: https://diyhue.org
+dependencies: []
 repo: https://github.com/diyhue/diyHue
 support: https://diyhue.discourse.group
 port: 80
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 defaultUsername: "admin@diyhue.org"
 defaultPassword: "changeme"
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
 releaseNotes: >-
   diyHue provides a complete smart home lighting solution with Philips Hue Bridge emulation.
 
